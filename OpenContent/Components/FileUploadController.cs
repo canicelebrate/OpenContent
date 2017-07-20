@@ -1,6 +1,6 @@
 #region Copyright
 // 
-// DotNetNuke® - http://www.dotnetnuke.com
+// DotNetNuke?- http://www.dotnetnuke.com
 // Copyright (c) 2002-2014
 // by DotNetNuke Corporation
 // 
@@ -172,7 +172,7 @@ namespace Satrabel.OpenContent.Components
             {
                 s = s.Replace(character.ToString(), "-");
             }
-            foreach (char character in " []|:;`%&$+,/=?@~#<>()¿¡«»!'’–*…^£".ToCharArray())
+            foreach (char character in " []|:;`%&$+,/=?@~#<>()Â¿Â¡Â«Â»!'â€™â€“*â€¦^Â£".ToCharArray())
             {
                 s = s.Replace(character.ToString(), "_");
             }

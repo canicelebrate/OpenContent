@@ -3,7 +3,7 @@
 <Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
   <PropertyGroup>
-    <WebsitePath>$(MSBuildProjectDirectory)\..\Website</WebsitePath>
+    <WebsitePath>C:\inetpub\DNN803\</WebsitePath>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -17,7 +17,7 @@
     <Copy SourceFiles="$(MSBuildProjectDirectory)\bin\Debug\OpenContent.dll" DestinationFolder="$(WebsitePath)\bin\" SkipUnchangedFiles="True" />
     <Copy SourceFiles="$(MSBuildProjectDirectory)\bin\Debug\OpenContent.pdb" DestinationFolder="$(WebsitePath)\bin\" SkipUnchangedFiles="True" />
     <Copy SourceFiles="$(MSBuildProjectDirectory)\bin\Debug\Handlebars.dll" DestinationFolder="$(WebsitePath)\bin\" SkipUnchangedFiles="True" />
-	
+    <Copy SourceFiles="$(MSBuildProjectDirectory)\bin\Debug\EPPlus.dll" DestinationFolder="$(WebsitePath)\bin\" SkipUnchangedFiles="True" />
 	<!-- Copy files into Website's module folder -->
     <ItemGroup>
       <DeployInclude Include="**\*.ascx" Exclude="packages\**" />
